@@ -1,7 +1,54 @@
 /*-----------------HEDER-----------------*/
 .head {
     border-bottom: 1px solid var(--cornflower);
+    position: relative;
 }
+
+.head-btn-open{
+
+}
+
+.head-open{
+fill: var(--navi-blue);
+}
+
+.head-btn-open{
+ border: none;
+ background-color: transparent;
+}
+
+.head-btn-close{
+border-radius: 50%;
+padding: 8px;
+background-color: #E7E9FC;
+border: 1px solid rgba(0, 0, 0, 0.1);
+display: inline-block;
+padding: 8px;
+transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.head-close{
+ display: block;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: var(--write-title);
+    z-index: 999;
+
+    transform: translateY(-100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateY(0);
+}
+
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -11,6 +58,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
+    padding-top: 25.5px;
+    padding-bottom: 23.5px;
 }
 
 .logo-second {
@@ -69,7 +118,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+   
 
+}
+@media screen and (min-width:480px) {
+    .hero{
+        background-position: top center;
+    }
 }
 
 .hero-header {

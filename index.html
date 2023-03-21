@@ -84,12 +84,22 @@
         </form>
     </div>
 </div>
-
-    <header class="head">
-        <div class="conteiner">
-            <div class="head-flex">
-                <nav class="nav-flex">
-                    <a class="logo" href="./index.html">Web<span class="logo-second">Studio</span></a>
+<header class="head">
+    <div class="conteiner">
+        <button type="button" class="head-btn-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="head-open" width="32" height="22">
+                <use href="./images/open.svg#open"></use>
+            </svg>
+        </button>
+        <div class="head-flex">
+            <nav class="nav-flex">
+                <a class="logo" href="./index.html">Web<span class="logo-second">Studio</span></a>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="head-btn-close js-close-menu">
+                        <svg class="head-close" width="8" height="8">
+                            <use href="./images/close.svg#close"></use>
+                        </svg>
+                    </button>
                     <ul class="head-navigation-list">
                         <li class="head-navigation">
                             <a class="head-navigation-list-link active" href="index.html">Studio</a>
@@ -100,23 +110,29 @@
                         <li class="head-navigation">
                             <a class="head-navigation-list-link" href="">Contacts</a>
                         </li>
-
                     </ul>
-                </nav>
+                        <address class="contacts">
+                            <ul class="contacts-list">
+                                <li class="contacts-mail">
+                                    <a class="contacts-mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                </li>
+                                <li class="contacts-tel">
+                                    <a class="contacts-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                                </li>
+                            </ul>
+                        </address>
 
-                <address class="contacts">
-                    <ul class="contacts-list">
-                        <li class="contacts-mail">
-                            <a class="contacts-mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="contacts-tel">
-                            <a class="contacts-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
+                
+                </div>
+            </nav>
+            
+          
+           
         </div>
-    </header>
+    </div>
+   
+    
+</header>
 
     <main>
 
@@ -506,7 +522,7 @@
     </footer>
 
 
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>
