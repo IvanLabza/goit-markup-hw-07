@@ -73,6 +73,13 @@ transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), fill 0.25s cubi
 
 }
 
+@media screen and (max-width:480px) {
+    .nav-flex{
+        display: flex;
+        align-items: center;
+    }
+}
+
 .head-navigation-list-link {
     font-weight: 500;
     line-height: 1.5;
