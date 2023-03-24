@@ -1,0 +1,18 @@
+@media screen and (min-width:768px) {
+    .conteiner {
+        width: 768px;
+    }
+
+    .head-btn-open{
+        display: none;
+    }
+
+    .head-btn-close{
+        display: none;
+    }
+
+    .menu-container{
+        position: static;
+        background-color: transparent;
+    }
+}

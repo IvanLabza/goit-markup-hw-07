@@ -80,9 +80,17 @@ body {
     padding-right: 15px;   
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:360px) {
+    .conteiner {
+        width: 360px;
+    }
+}
+
+
+@media screen and (min-width:480px){
     .conteiner{
         width: 480px;
+      
     }
 }
 
