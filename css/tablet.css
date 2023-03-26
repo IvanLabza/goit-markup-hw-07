@@ -140,4 +140,29 @@
     .ftr-text{
         margin: 0;
     }
+
+    .ftr-tab{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .ftr-title{
+        text-align: left;
+        margin-top: 0;
+    }
+    .ftr-form-title{
+        text-align: left;
+    }
+
+    .ftr-input{
+        display: block;
+        min-width: 264px;
+
+    }
+
+    .ftr-form-flex{
+        display: flex;
+        gap: 24px;
+    }
 }
