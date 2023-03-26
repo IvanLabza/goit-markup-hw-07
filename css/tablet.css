@@ -136,4 +136,8 @@
     .ftr-soc{
         display: inline-block;
     }
+
+    .ftr-text{
+        margin: 0;
+    }
 }
