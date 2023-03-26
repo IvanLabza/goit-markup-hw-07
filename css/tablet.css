@@ -126,9 +126,14 @@
     .ftr-content{
         display: flex;
         flex-wrap: wrap;
+      
     }
 
     .ftr-flex{
-        min-width: 264px;
+        align-items: flex-start;
+    }
+
+    .ftr-soc{
+        display: inline-block;
     }
 }
