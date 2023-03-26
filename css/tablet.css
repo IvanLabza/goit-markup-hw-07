@@ -14,7 +14,6 @@
     .menu-container{
         position: static;
         background-color: transparent;
-        width: unset;
         height: unset;
         transform: unset;
         display: flex;
@@ -25,11 +24,12 @@
     .head-svg{
         display: none;
     }
+    .contacts{
+        margin-left: auto;
+    }
     .contacts-list{
-        flex-wrap: nowrap;
-        flex-direction: column;
+        display: block;
         margin: 0;
-        gap: 12px;
         margin-left: auto;
     }
     .link:is(:hover,:focus){
@@ -63,6 +63,8 @@
         line-height: 1.5;
     }
 
+    .contact-conteiner
+
     .link{
         font-family: 'Roboto';
         font-weight: 400;
@@ -70,14 +72,14 @@
         line-height: 14px;
         letter-spacing: 0.04em;
         color: #434455;
-        padding-top: 16px;
         padding-bottom: 16px;
+        display: block;
     }
 
     .head-navigation-list{
         display: flex;
         gap: 40px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .about-list-flex{
