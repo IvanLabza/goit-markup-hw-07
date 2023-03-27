@@ -10,6 +10,10 @@
     display: block;
     margin-left: auto;
 }
+.active.head-navigation-list-link {
+    color: var(--ocean);
+
+}
 
 
 .close {
@@ -137,15 +141,7 @@
         line-height: 1.2;
         color: #434455;
     }
-    .link:is(:hover, :focus){
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: #4D5AE5;
-    }
+
 
     .head-navigation-list {
         padding: 0;
@@ -167,6 +163,30 @@
     .contacts-mail{
         margin-top: 40px;
     }
+
+    @media screen and (max-width:767px){
+      .contacts-tel-link.link{
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 1.1;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            color: #4D5AE5;
+      }  
+    }
+
+    @media screen and (max-width:391px) {
+    .head-svg-cnt{
+        gap: 24px;
+    }
+
+   
+
+        
+    }
+
+
 
 
 
@@ -301,6 +321,7 @@
 }
 
 .modal {
+    min-width: 392px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -309,6 +330,8 @@
     background-color: #FFFFFF;
     opacity: 1;
     border-radius: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -508,8 +531,12 @@
     .teamcart-content {
         max-width: 264px;
         margin: 0 auto;
-        margin-bottom: 72px;
+        
 
+    }
+
+    .teamcart-content:not(:last-child){
+        margin-bottom: 72px;
     }
 
 
@@ -566,8 +593,12 @@
     .custom-content {
         min-width: 190px;
         min-height: 88px;
-        margin-bottom: 88px;
+        
 
+    }
+
+    .custom-content:not(:last-child){
+        margin-bottom: 88px;
     }
 
     .custom-list {
@@ -809,7 +840,7 @@
 }
 
 .form {
-    padding: 16px 24px 24px 24px;
+    padding: 16px 0 24px 0;
     background-color: #FCFCFC;
 }
 
@@ -944,12 +975,8 @@
 }
 
 
-    .form {
-        min-width: 392px;
-    }
-
     .hero-btn-modal {
-        margin-left: 344px;
+        margin-left: auto;
         margin-top: 24px;
     }
 
@@ -1102,5 +1129,11 @@ screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
     .hero{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero-bg-tel-2x.jpg");
+    }
+}
+
+@media screen and (max-width:391px) {
+    .modal {
+        min-width: 315px;
     }
 }

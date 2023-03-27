@@ -157,6 +157,7 @@
         display: flex;
         align-items: center;
         gap: 24px;
+        justify-content: center;
     }
 
     .ftr-title{
@@ -177,6 +178,10 @@
         display: flex;
         gap: 24px;
     }
+
+        .ftr-form {
+            margin-left: 120px;
+        }
 
     .logo{
         padding: 24px 0;

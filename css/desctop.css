@@ -56,8 +56,13 @@
     line-height: 1.5;
 }
 
+.product-header{
+    margin-bottom: 72px;
+}
+
 .about-list-text{
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .about-list{
@@ -68,8 +73,17 @@
     margin: 0;
 }
 
+.ftr-form {
+    margin-left: 0;
+}
+
+.custom-list{
+    gap: 24px;
+}
+
 .custom-content{
     min-width: 168px;
+    margin-bottom: 0;
 }
 
 .about-list-flex{
