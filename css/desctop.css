@@ -77,6 +77,11 @@
     margin-left: 0;
 }
 
+
+.teamcart-content:not(:last-child) {
+    margin-bottom: 0;
+}
+
 .custom-list{
     gap: 24px;
 }
